@@ -11,7 +11,7 @@ node{
     stage('Junit test'){
         junit 'target/surefire-reports/*.xml'
     }
-    stage('archive){
+    stage('archive'){
         archive 'target/*.jar'
     }
 }

@@ -14,4 +14,10 @@ node{
     stage('archive'){
         archive 'target/*.jar'
     }
+    stage('sonarqube'){
+        mvn sonar:sonar \
+  -Dsonar.projectKey=petclinic \
+  -Dsonar.host.url=http://18.222.104.159:9000 \
+  -Dsonar.login=28acae71f7d9cff446a94080a4bb6eeeb47af109
+    }
 }

@@ -15,7 +15,7 @@ node{
         archive 'target/*.jar'
          sh """mvn sonar:sonar \
   -Dsonar.projectKey=petclinic \
-  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.host.url=http://192.168.0.112:9000/ \
   
   -Dsonar.login=4c05eeee47f07f20c1bd4be2496ce8fe00aed680
   -Dcheckstyle.skip
